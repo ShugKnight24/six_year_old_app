@@ -6,7 +6,7 @@ wordApp.controller("wordAppController",["$scope", function($scope){
 // word array
   $scope.wordArray = ["pineapple","wu-tang","urban","apple","doge","much","wow","Josh","Shug","amazed"];
 // phrase array
-  // $scope.phraseArray = ["Mack daddy pho life", "what does this even mean", "I wish we had fresh pineapple juice"];
+  $scope.phraseArray = ["Mack daddy pho life", "what does this even mean", "I wish we had fresh pineapple juice"];
 // styles for word array ==> target via class
   $scope.wordDecoration = ["red", "blue", "green", "yellow"];
 // styles for phrase array
@@ -25,11 +25,15 @@ $scope.addRandomWord = function(){
     $scope.randomText.push(random);
     // console.log($scope.randomText);
   };
-// $scope.addRandomPhrase = function(){
+$scope.addRandomPhrase = function(){
+    var random = {};
+    random.word = $scope.phraseArray[Math.floor(Math.random()*$scope.phraseArray.length)];
+    random.decor = " ";
+    $scope.randomText.push(random);
 //     $scope.randomPhrase = $scope.phraseArray[Math.floor(Math.random() * $scope.phraseArray.length)];
 //     $scope.randomText.push($scope.randomPhrase + " ");
 //     console.log($scope.randomText);
-//   };
+  };
 $scope.addRandomWordDecoration = function(){
     var random = {};
     random.word = $scope.wordArray[Math.floor(Math.random() * $scope.wordArray.length)];
