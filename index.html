@@ -13,7 +13,7 @@
     <button type="button" ng-click="addRandomWord()">Add Random Word</button>
     <button type="button" ng-click="addRandomPhrase()">Add Random Phrase</button>
     <button type="button" ng-click="addRandomWordDecoration()">Add Random Decorated word</button>
-    <!-- <button type="button" ng-click="addRandomPhraseDecoration()">Add Random Decorated Phrase</button> -->
+    <button type="button" ng-click="addRandomPhraseDecoration()">Add Random Decorated Phrase</button>
       <div class="list-of-words">
           <span ng-repeat="words in randomText track by $index" class="ng-class: words.decor">
             {{words.word}}</span>

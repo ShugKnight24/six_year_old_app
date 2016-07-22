@@ -45,11 +45,15 @@ $scope.addRandomWordDecoration = function(){
     // console.log($scope.randomText);
     // console.log($scope.randomStyle);
 };
-// $scope.addRandomPhraseDecoration = function(){
+$scope.addRandomPhraseDecoration = function(){
+    var random = {};
+    random.word = $scope.phraseArray[Math.floor(Math.random()*$scope.phraseArray.length)];
+    random.decor = $scope.wordDecoration[Math.floor(Math.random()*$scope.wordDecoration.length)];
+    $scope.randomText.push(random);
 //     $scope.randomPhraseDecoration = $scope.phraseDecoration[Math.floor(Math.random() * $scope.phraseDecoration.length)];
 //     $scope.randomStyle.push($scope.randomPhraseDecoration);
 //     $scope.randomText.push($scope.randomPhrase + " ");
 //     console.log($scope.randomText);
 //     console.log($scope.randomStyle);
-//   };
+  };
 }]);
