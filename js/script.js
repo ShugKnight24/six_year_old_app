@@ -8,14 +8,12 @@ wordApp.controller("wordAppController",["$scope", function($scope){
 // phrase array
   // $scope.phraseArray = ["Mack daddy pho life", "what does this even mean", "I wish we had fresh pineapple juice"];
 // styles for word array ==> target via class
-  $scope.wordDecoration = ['red ','blue ','green ','yellow '];
+  $scope.wordDecoration = ["red", "blue", "green", "yellow"];
 // styles for phrase array
   // $scope.phraseDecoration = ["yellow","red","blue","green","spin","underline"];
 
 $scope.randomText = [];
 // $scope.randomStyle = [];
-
-
 
 //Check if wordArray is randomizing
 //  console.log(randomWord)
