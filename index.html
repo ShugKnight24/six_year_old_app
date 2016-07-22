@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Document</title>
+  <title>Talking App</title>
 </head>
 <body ng-app="wordApp">
   <div ng-controller="wordAppController">
+    <h1>{{title}}</h1>
     <button type="button" ng-click="addRandomWord()">Add Random Word</button>
-    <button type="button" ng-click="addRandomPhrase()">Add Random Phrase</button>
+    <!-- <button type="button" ng-click="addRandomPhrase()">Add Random Phrase</button> -->
     <button type="button" ng-click="addRandomWordDecoration()">Add Random Decorated word</button>
-    <button type="button" ng-click="addRandomPhraseDecoration()">Add Random Decorated Phrase</button>
+    <!-- <button type="button" ng-click="addRandomPhraseDecoration()">Add Random Decorated Phrase</button> -->
       <div class="list-of-words">
-            <span ng-repeat="words in randomWord" ng-class="">{{words}}</span>
+          <span ng-repeat="words in randomText track by $index" nclass="ng-class: {{words.decor}}">
+            {{words}}</span>
       </div>
-  <div>
+  </div>
+
   <script type="text/javascript" src="js/angular.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
