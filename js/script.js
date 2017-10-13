@@ -1,3 +1,5 @@
+'use strict';
+
 var wordApp = angular.module('wordApp', []);
 
 wordApp.controller('wordAppController',['$scope', function($scope){
