@@ -1,3 +1,14 @@
+#container {
+	max-width: 1440px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#page-heading {
+	font-family: 'Happy Monkey', cursive;
+	color: red;
+}
+
 .red {
 	color: white;
 	background-color: red;
